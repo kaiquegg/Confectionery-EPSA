@@ -14,6 +14,7 @@
   <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
 
   <title>DelicEPSA - Confeitaria</title>
+
 </head>
 
 <body>
@@ -35,7 +36,7 @@
               <a class="nav-link" href="./sobre.html">Sobre Nós</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#produtos">Produtos</a>
+              <a class="nav-link" href="./produtos.html">Produtos</a>
             </li>
             <a href="./produtos-cad.html">
               <li class="nav-item"><button class="main-btn">Cadastro de Produtos</button></li>
@@ -45,55 +46,48 @@
       </div>
     </nav>
   </header>
-  <section id="explore-food">
-    <div class="explore-food wrapper">
+  <section>
+    <div class="newsletter wrapper">
       <div class="container">
         <div class="row">
-          <div class="col-sm-12">
-            <div class="text-content text-center">
-              <h2>Explore Nossas Comidas</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quo, repudiandae sunt quam quaerat, quae porro maiores itaque minima natus cum necessitatibus dolor inventore optio non ut temporibus exercitationem quos.</p>
+          <div class="sol-sm-12">
+            <div class="text-content text-center pb-4">
+              <h2>Cadastro de Produtos</h2>
             </div>
-          </div>
-        </div>
-        <div class="row pt-5">
-          <div class="col-lg-4 col-md-6 mb-lg-0 mb-5">
-            <div class="card">
-              <img src="./images/img/img-3.jpg" class="img-fluid">
-              <div class="pt-3">
-                <h4>Sanduiche Vegano</h4>
-                <p>Tempo: 15 - 20 minutos | Serve: 1</p>
-                <span>$10.50 <del>$11.70</del></span>
-                <button class="mt-4 main-btn">Pedir agora</button>
+            <form class="newsletter">
+              <div class="row">
+                <div class="mb-4 col-md-4 col-12">
+                  <h4>Nome</h2>
+                    <input class="form-control" placeholder="Nome do Produto" name="ID" type="text">
+                </div>
+                <div class="mb-4 col-md-2 col-12">
+                  <h4>Preço</h4>
+                  <input class="form-control" placeholder="R$39,99" name="ID" type="number">
+                </div>
+                <div class="mb-4 col-md-2 col-12">
+                  <h4>Quantidade</h4>
+                  <input class="form-control" placeholder="14" name="ID" type="number">
+                </div>
+                <div class="mb-4 col-md-4 col-12">
+                  <h4>Fotos</h4>
+                  <input class="form-control" type='file' name="image" onchange="readURL(this);" />
+                </div>
               </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 mb-lg-0 mb-5">
-            <div class="card">
-              <img src="./images/img/img-4.jpg" class="img-fluid">
-              <div class="pt-3">
-                <h4>Hamburguer Vegano</h4>
-                <p>Tempo: 30 - 45 minutos | Serve: 1</p>
-                <span>$9.20 <del>$10.50</del></span>
-                <button class="mt-4 main-btn">Pedir agora</button>
+              <div class="mb-4 col-md-12 col-12">
+                <h4>Descrição</h4>
+                <textarea class="form-control" name="" id="" cols="30" rows="5" placeholder="Diga as caracteristicas do produto, seu diferencial etc."></textarea>
               </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 mb-lg-0 mb-5">
-            <div class="card">
-              <img src="./images/img/img-5.jpg" class="img-fluid">
-              <div class="pt-3">
-                <h4>Torta de morango</h4>
-                <p>Tempo: 10 - 15 minutos | Serve: 1</p>
-                <span>$12.50 <del>$14.20</del></span>
-                <button class="mt-4 main-btn">Pedir agora</button>
+              <div class="eia col-md-12 col-12">
+                <button class="main-btn" type="submit">Enviar!</button>
               </div>
-            </div>
+            </form>
           </div>
         </div>
       </div>
     </div>
   </section>
+
+
   <footer id="footer">
     <div class="footer py-5">
       <div class="container">
@@ -120,6 +114,9 @@
       </div>
     </div>
   </footer>
+
+
+
 
 
 
