@@ -279,3 +279,25 @@ p {
   color: var(--text-grey);
   margin-left: 0.5rem;
 }
+
+/* Footer  */
+
+.footer {
+  background: var(--primary-color);
+}
+
+.footer .footer-link {
+  font-size: 1rem;
+  color: var(--white-color);
+  padding: 0 1.875rem;
+}
+
+.footer a:hover {
+  color: var(--white-color) !important;
+}
+
+.footer a i {
+  font-size: 1.5rem;
+  color: var(--white-color);
+  padding: 0 1rem;
+}
