@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Bibliotecas -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <!-- Css Próprio -->
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+
+  <title>DelicEPSA - Confeitaria</title>
+
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navigation-wrap">
+      <div class="container">
+        <a class="navbar-brand" href="./index.html">
+          <img src="./images/img/logo.png" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fas fa-stream navbar-toggler-icon"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./sobre.html">Sobre Nós</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./produtos.html">Produtos</a>
+            </li>
+            <a href="./produtos-cad.html">
+              <li class="nav-item"><button class="main-btn">Cadastro de Produtos</button></li>
+            </a>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <section>
+    <div class="newsletter wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="sol-sm-12">
+            <div class="text-content text-center pb-4">
+              <h2>Cadastro de Produtos</h2>
+            </div>
+            <form class="newsletter">
+              <div class="row">
+                <div class="mb-4 col-md-4 col-12">
+                  <h4>Nome</h2>
+                    <input class="form-control" placeholder="Nome do Produto" name="ID" type="text">
+                </div>
+                <div class="mb-4 col-md-2 col-12">
+                  <h4>Preço</h4>
+                  <input class="form-control" placeholder="R$39,99" name="ID" type="number">
+                </div>
+                <div class="mb-4 col-md-2 col-12">
+                  <h4>Quantidade</h4>
+                  <input class="form-control" placeholder="14" name="ID" type="number">
+                </div>
+                <div class="mb-4 col-md-4 col-12">
+                  <h4>Fotos</h4>
+                  <input class="form-control" type='file' name="image" onchange="readURL(this);" />
+                </div>
+              </div>
+              <div class="mb-4 col-md-12 col-12">
+                <h4>Descrição</h4>
+                <textarea class="form-control" name="" id="" cols="30" rows="5" placeholder="Diga as caracteristicas do produto, seu diferencial etc."></textarea>
+              </div>
+              <div class="eia col-md-12 col-12">
+                <button class="main-btn" type="submit">Enviar!</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <footer id="footer">
+    <div class="footer py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <a class="footer-link" href="./produtos.html">Produtos</a>
+            <a class="footer-link" href="./sobre.html">Sobre nós</a>
+            <a class="footer-link" href="#">Contato</a>
+            <a class="footer-link" href="#">Cadastro de Produtos</a>
+            <div class="footer-social pt-4 text-center">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+          </div>
+          <div class="col-sm-12">
+            <div class="footer-copy">
+              <div class="copy-right text-center pt-5">
+                <p class="text-light">© 2023 Técnico em informática EPSA. Todos os direitos reservados </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+
+
+  <!-- JS Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+  <!-- JS Próprio -->
+  <script src="./js/main.js"></script>
+</body>
+
+</html>
